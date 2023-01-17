@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: black;
+  --primary-color-darker: hsl(244, 86%, 41%);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+.principal {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+form input, form label{
+  width: 32.80%;
+  margin-bottom: 9px;
+}
+
+form input {
+  font-size: 16px;
+  height: 45px;
+  padding: 0 19px;
+}
+
+form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+ button {
+  transition: color 1s;
+  overflow: hidden;
+  padding: 30px 60px;
+  outline: 2px solid var(--primary-color-darker);
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+}
+button:hover {
+  color: var(--primary-color-darker);
+}
+button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: var(--primary-color-darker);
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+button:hover::before{
+  transform: scaleX(1) skewX(35deg);
+}
+.relogio{
+    font-size: 3em;
+}
+
+.pausado{
+  color: red;
+}
+.normal{
+    font-size: medium;
+}
+.btnNormal{
+border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 150;
+  height: 20px;
+  width: 50px;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 9px;
+}
+.icon{
+  width: 60px;
+  height: 60px;
+  padding: 5px;
+}

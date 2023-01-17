@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+:root {
+  --primary-color: black;
+  --primary-color-darker: hsl(244, 86%, 41%);
+}
+
+* {
+  box-sizing: border-box;
+  outline: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--primary-color);
+  font-family: 'Open sans', sans-serif;
+  font-size: 1.5em;
+  line-height: 1.8em;
+}
+
+.principal {
+  max-width: 900px;
+  margin: 50px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 9px;
+}
+
+button {
+
+  width: 32.80%;
+  margin-bottom: 9px;
+}
+
+form input {
+  font-size: 16px;
+  height: 45px;
+  padding: 0 19px;
+}
+
+form input:focus {
+  outline: 2px solid var(--primary-color);
+}
+
+button {
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 650;
+  height: 40px;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 9px;
+}
+
+ button:hover {
+  background: var(--primary-color-darker);
+}
+
+.paragrafo-resultado{
+    background: #1cd87a;
+    padding: 10px 20px;
+}
+
+.bad{
+    background: #c51616;
+    padding: 10px 20px;
+}
+.cont{
+  color: white;
+  font-family: 'Open sans', sans-serif;
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  border-radius: 9px;
+  background-color: gray;
+}
+
+footer img{
+    width: 32%;
+    height: 250px;
+}
+
+.normal{
+    font-size: medium;
+}
+.btnNormal{
+border: none;
+  background: var(--primary-color);
+  color: #fff;
+  font-size: 14px;
+  font-weight: 150;
+  height: 20px;
+  width: 50px;
+  cursor: pointer;
+  margin-top: 25px;
+  border-radius: 9px;
+}
