@@ -83,18 +83,6 @@ button:hover::before{
 .normal{
     font-size: medium;
 }
-.btnNormal{
-border: none;
-  background: var(--primary-color);
-  color: #fff;
-  font-size: 14px;
-  font-weight: 150;
-  height: 20px;
-  width: 50px;
-  cursor: pointer;
-  margin-top: 25px;
-  border-radius: 9px;
-}
 .icon{
   width: 60px;
   height: 60px;

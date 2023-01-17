@@ -26,7 +26,7 @@ body {
   border-radius: 5px;
 }
 
-form input, form label, button {
+form input, form label {
   display: block;
   width: 100%;
   margin-bottom: 5px;
@@ -43,20 +43,37 @@ form input:focus {
 }
 
 button {
-    border: none;
-    background: var(--primary-color);
-    color: #fff;
-    font-size: 15px;
-    font-weight: 650;
-    height: 40px;
-    cursor: pointer;
-    margin-top: 25px;
-    border-radius: 9px;
+  transition: color 1s;
+  overflow: hidden;
+  padding: 30px 60px;
+  outline: 2px solid var(--primary-color-darker);
+  text-transform: uppercase;
+  display: inline-block;
+  text-decoration: none;
+  position: relative;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
 }
 button:hover {
-  background: var(--primary-color-darker);
+  color: var(--primary-color-darker);
 }
-
+button::before{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -50px;
+  z-index: -1;
+  width: 150%;
+  height: 100%;
+  background-color: var(--primary-color-darker);
+  transform: scaleX(0) skewX(35deg);
+  transform-origin: left;
+  transition: transform 1s;
+}
+button:hover::before{
+  transform: scaleX(1) skewX(35deg);
+}
 .paragrafo-resultado{
     background: #1cd87a;
     padding: 10px 20px;
@@ -65,17 +82,4 @@ button:hover {
 .bad{
     background: #c51616;
     padding: 10px 20px;
-}
-
-.btnNormal{
-    border: none;
-      background: var(--primary-color);
-      color: #fff;
-      font-size: 14px;
-      font-weight: 150;
-      height: 20px;
-      width: 50px;
-      cursor: pointer;
-      margin-top: 25px;
-      border-radius: 9px;
 }
