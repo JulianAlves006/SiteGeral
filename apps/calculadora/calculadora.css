@@ -80,6 +80,16 @@ button::before{
 button:hover::before{
   transform: scaleX(1) skewX(35deg);
 }
+.relogio{
+    font-size: 3em;
+}
+
+.pausado{
+  color: red;
+}
+.normal{
+    font-size: medium;
+}
 .icon{
   position: absolute;
   width: 60px;
@@ -101,109 +111,26 @@ button:hover::before{
   color: var(--primary-color-darker);
   background-color: var(--primary-color);
 }
-.box{
-  width: 60px;
-  height: 58px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  padding: 5px;
-  cursor: pointer;
-  margin: 0.6em;
-  transition: all 0.4s;
+.btn-num{
+  width: 100%;
+  font-size: 1em;
+  border: none;
 }
-.box:hover{
-  width: 160px;
-  background: #272727;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 0 50px #0000007c;
+.btn-del{
+  width: 100%;
+  font-size: 1em;
+  border: none;
 }
-.boxinsta{
-  width: 60px;
-  height: 58px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  overflow: hidden;
-  padding: 5px;
-  cursor: pointer;
-  margin: 0.6em;
-  transition: all 0.4s;
+.btn-eq{
+  width: 100%;
+  font-size: 1em;
+  border: none;
 }
-.boxinsta:hover{
-  width: 200px;
-  background: #c32aa3;
-  border-radius: 10px;
-  color: white;
-  box-shadow: 0 0 50px #b315917c;
-}
-
-p{
-  transform: translate(60px);
-}
-.box .boxinsta{
-
-position: absolute;
-
-width: 50px;
-
-height: 50px;
-
-display: flex;
-
-Justify-content: center;
-
-align-items: center;
-
-color: white;
-
-border-radius: 10px;
-
-margin-right: 10px; 
-
-transition: all 0.4s;
+.btn-clear{
+  width: 100%;
+  font-size: 1em;
+  border: none;
 }
 
 
-.Instagram { background: #c32aa3}
 
-.GitHub{ background: #121212;}
-
-
-.box:hover .icon {
-
-background: white;
-
-box-shadow: 0 0 20px rgba(0, 0, 0, 0.26);
-color: rgb(59, 59, 59);
-}
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333;
-}
-
-li {
-  float: left;
-  border-right: 1px solid #bbb;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: var(--primary-color-darker);
-}
-
-li:last-child {
-  border-right: none;
-}
