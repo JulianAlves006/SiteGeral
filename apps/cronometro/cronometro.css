@@ -111,3 +111,6 @@ button:hover::before{
   color: var(--primary-color-darker);
   background-color: var(--primary-color);
 }
+*{
+  padding: 20px;
+}
