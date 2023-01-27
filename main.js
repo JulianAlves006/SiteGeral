@@ -1,8 +1,7 @@
 document.addEventListener('click', e =>{
     const el = e.target;
     const tag = el.tagName.toLowerCase();
-    console.log(el);
-    if(tag === 'button'){
+    if(tag === 'a'){
         e.preventDefault();
         carregaPagina(el);
     }
