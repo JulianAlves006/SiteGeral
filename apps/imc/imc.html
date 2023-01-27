@@ -12,10 +12,18 @@
     <section class="container">
         <h1>Calcular IMC</h3>
             <form action="" id="formulario" method="POST">
-                <label for="peso">Peso</label>
-                <input type="text" id="peso" name="Peso">
-                <label for="altura">Altura</label>
-                <input type="text" id="altura" name="Altura">
+                <div class="inputbox">
+                    <input required="required" type="text" id="peso" name="peso">
+                    <span>Peso</span>
+                    <i></i>
+                </div>
+                <br>
+                <div class="inputbox">
+                    <input required="required" type="text" id="altura" name="altura">
+                    <span>Altura</span>
+                    <i></i>
+                </div>
+                <br>
                 <button type="submit" class="btn">Calcular IMC</button>
             </form>
 
