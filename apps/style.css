@@ -62,7 +62,7 @@ form input:focus {
   color: #fff;
 }
 button:hover {
-  color: var(--primary-color-darker);
+  color: #fff
 }
 button::before{
   content: '';
