@@ -29,7 +29,7 @@ body {
 .principal {
   max-width: 900px;
   margin: 50px auto;
-  background: #363434;
+  background: #858383f1;
   padding: 20px;
   border-radius: 9px;
   -webkit-box-shadow: 13px 13px 17px 10px rgba(0,1,20,1);
@@ -213,7 +213,7 @@ li .mymenu {
  font-family: 'open_sansbold';
  font-size:1.6em;
  text-decoration: none;
- color:#4c4c4c;
+ color:#919191;
  -webkit-border-box: 0 1px 0 0 #4c4c4c;
  border-bottom: 4px solid transparent;
  -webkit-transition: border-bottom .3s linear;
@@ -284,3 +284,4 @@ li .mymenu:hover {
   transform: scaleX(1.4) scaleY(1.6);
   opacity: 0;
  }
+ 
